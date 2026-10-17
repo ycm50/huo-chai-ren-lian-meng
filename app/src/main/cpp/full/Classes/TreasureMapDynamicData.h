@@ -1,0 +1,30 @@
+#pragma once
+// TreasureMapDynamicData
+// 基类: (无)
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class TreasureMapDynamicData {
+public:
+    void clearCacheData();
+    void updateMapData(int, std::string);
+    int getNextStep(int);
+    void deleteMapData();
+    ~TreasureMapDynamicData();
+    void buildMapData();
+    void initMapTypes();
+    void initBuildLimitData();
+    void insertMapData();
+    void initData();
+    TreasureMapDynamicData();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x60?96 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[96];
+};

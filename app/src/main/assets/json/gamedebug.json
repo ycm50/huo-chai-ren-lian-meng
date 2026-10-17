@@ -1,0 +1,135 @@
+{
+ 	"opencircusdebug":
+	{
+        "valuerealInt":4015,
+	    "valuedebugInt": 4015,
+	    "content": "打开竞技场的前置关卡 代码控制  不用修改"
+	},
+    "openelitsgatesdebug":
+    {
+        "valuerealInt":4015,
+        "valuedebugInt": 4015,
+        "content": "打开精英关卡的前置关卡 代码控制  不用修改"
+    },
+    "openpkonline":
+    {
+        "valuerealInt":4020,
+        "valuedebugInt": 4020,
+        "content": "打开排位赛的前置关卡 代码控制  不用修改"
+    },
+    "openlimittimecopy":
+    {
+        "valuerealInt":4026,
+        "valuedebugInt": 4026,
+        "content": "打开限时副本的前置关卡 代码控制  不用修改"
+    },
+    "opengm":
+    {
+        "valuerealInt":0,
+        "valuedebugInt":0,
+        "content": "是否用打开测试工具 1打开 0不打开"
+    },
+    "stringurldebug":
+    {
+        "valuerealInt":1,
+        "valuedebugInt":1,
+        "content": "是否用测试的url 1正式 0测试 代码控制  不用修改"
+    },
+    "closedebugview":
+    {
+        "valuerealInt":0,
+        "valuedebugInt":0,
+        "content": "是否显示debugview 1显示 0不显示 代码控制  不用修改"
+    },
+    "appdelegateumdebug":
+    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        "valuedebugString":"um_360",
+        "content": "友盟名字"
+    },
+    "zhuangshulibao":
+    {
+        "hasGift":"1",
+        "giftnamech":"360专属礼包",
+        "content" : "hasGift=0---代码没有专属礼包"
+    },
+    "bluetooth":
+    {
+        "hasbluetooth":"1",
+        "content" : "是否开启蓝牙联机-----0代表关闭蓝牙,1代表开启蓝牙"
+    },
+    "kugoudebug":
+    {
+        "valueInt":0,
+        "content":"如果valueInt=1的时候，普通的退出。如果valueInt=0,点击退出，调用第三方退出"
+    },
+    "disanfangdebug":
+    {
+        "valueInt":1,
+        "content":"如果valueint=0,小额计费,如果value=1,大额计费"
+    },
+    "channelname":
+    {
+        "valueName":"360支付",
+        "content":"商店第三方标题名称"
+    },
+    "channelcampaignicon":
+    {
+        "iconString":"",
+        "content":"渠道活动的图标"
+    },
+    "openad":
+    {
+        "valueInt":1,
+        "content":"是否开启广告，0不开启，1开启"
+    },
+    "openmoreandabout":
+    {
+        "moreandabout":0,
+        "content":"是否显示关于和更多，0不显示，1显示"
+    },
+    "showrmbcostview":
+    {
+        "rmbcost":1,
+        "content":"是否开启可自动弹计费点，0不开启，1开启"
+    },
+    "channel360":
+    {
+        "channel360":1,
+        "content":"360渠道用倒得"
+    },
+    "channelOppo":
+    {
+        "channelOppo":0,
+        "content":"针对Oppo渠道，返回键直接调用他们的第三方退出界面"
+    },
+    "channelTencent":
+    {
+        "channelTencent":0,
+        "content":"针对腾讯渠道，是否给qq币"
+    },
+    "isNYAD":
+    {
+        "isNYAD":0,
+        "content":"是否接入宁游；1 接入；0 没有接入；"
+    },
+    "isQQ5":
+    {
+        "isQQ5":0,
+        "content":"是否是qq5渠道；1 是；0 不是；"
+    },
+    "isDianxiDTB":
+    {
+        "isDianxiDTB":0,
+        "content":"是否是电信大厅包；1 是，0 不是；"
+    },
+    "isQuBlack":
+    {
+        "isQuBlack":0,
+        "content":"是否去黑边；1 是，0 不是；"
+    },
+    "isUGPay":
+    {
+        "isUGPay":0,
+        "content":"是否是UGPay渠道；1 是；0 不是；"
+    }
+}

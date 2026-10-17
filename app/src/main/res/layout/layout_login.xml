@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/bg_load" android:background="@drawable/load_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/btn_sign" android:paddingLeft="40.0dip" android:paddingBottom="30.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_sign" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/btn_nosign" android:paddingRight="40.0dip" android:paddingBottom="30.0dip" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_nosign" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

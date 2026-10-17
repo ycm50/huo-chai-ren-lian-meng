@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/messageListView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@id/messageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <LinearLayout android:id="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <Button android:id="@id/getMessages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="get" />
+        <Button android:id="@id/sendMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="send" />
+        <Button android:id="@id/deleteMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="delete" />
+    </LinearLayout>
+</LinearLayout>

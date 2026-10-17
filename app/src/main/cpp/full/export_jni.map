@@ -1,0 +1,19 @@
+/* export_jni.map —— SYMBOL_HYGIENE (R89)
+ *
+ * 只导出 JNI 入口（Java_* 与 JNI_OnLoad），其余全部 local。
+ *
+ * 原因：默认可见性会把整个引擎+游戏（96,198 个 dynsym）放进进程全局符号表；
+ * 实测 libart.so 的**未定义符号**里有 51 个与我们同名（全是 tinyxml2::*，因为 ART 也内嵌 tinyxml2），
+ * 动态链接器可能把 libart 的引用绑到我们的实现 -> ART 内部状态错乱 -> 真机出现
+ * "Check failed: code != nullptr ... StringFactory.newStringFromBytes" 这类与业务无关的 abort。
+ *
+ * 同时必须保证 45 个 Java_* 入口仍可见（Java 侧按名字查找）——它们不一定都带 JNIEXPORT，
+ * 所以用版本脚本统一放行。
+ */
+{
+  global:
+    Java_*;
+    JNI_OnLoad;
+  local:
+    *;
+};

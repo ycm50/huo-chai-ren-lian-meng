@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OK">确定</string>
+    <string name="Tip">提示</string>
+    <string name="Fail">失败</string>
+</resources>

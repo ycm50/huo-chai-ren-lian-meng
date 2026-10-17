@@ -1,0 +1,31 @@
+#pragma once
+// BLArrangeButton
+// 基类: cocos2d::CCLayer
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLArrangeButton : public cocos2d::CCLayer {
+public:
+    ~BLArrangeButton();
+    BLArrangeButton();
+    int * create();
+    void initView();
+    undefined4 getPresenter();
+    undefined4 getBtn();
+    undefined4 getSprSel();
+    bool getIsSelected();
+    void setIsSelected(bool);
+    bool init();
+    void onEnter();
+    void onExit();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x118?280 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[280];
+};

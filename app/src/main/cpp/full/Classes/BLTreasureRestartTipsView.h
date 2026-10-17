@@ -1,0 +1,29 @@
+#pragma once
+// BLTreasureRestartTipsView
+// 基类: cocos2d::CCLayer
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLTreasureRestartTipsView : public cocos2d::CCLayer {
+public:
+    ~BLTreasureRestartTipsView();
+    BLTreasureRestartTipsView();
+    void initView();
+    undefined4 getPresenter();
+    undefined4 getLabIntroduce();
+    undefined4 getBtnSure();
+    undefined4 getBtnCancle();
+    bool init();
+    void onEnter();
+    void onExit();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x118?280 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[280];
+};

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/img_egame" android:layout_width="410.0dip" android:layout_height="298.0dip">
+        <Button android:layout_gravity="right" android:id="@id/btn_close" android:background="@drawable/egame_sdk_icon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+            <TextView android:textSize="20.0dip" android:textColor="#ffff0000" android:id="@id/payname" android:paddingLeft="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20000铜钱" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffff0000" android:id="@id/paynum" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2元/次" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/payimg" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/egame_sdk_icon_rmb" android:layout_toLeftOf="@id/paynum" />
+        </RelativeLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_ok" android:background="@drawable/btn_egame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" />
+    </LinearLayout>
+</FrameLayout>

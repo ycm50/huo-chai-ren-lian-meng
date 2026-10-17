@@ -1,0 +1,85 @@
+#include "BLUpdatePublishUI.h"
+#include "UIObject.h"
+#include "cocos2d.h"
+#include "SimpleAudioEngine.h"
+#include <cstring>
+#include <cstdlib>
+#include <cstdio>
+#include <cmath>
+#include <new>   // ghost_fix.js 自动补齐
+using namespace cocos2d;
+// 兜底声明
+extern "C" long long func_0079e2cc(...);
+extern "C" long long func_0079e2fc(...);
+extern "C" long long func_0079e4fc(...);
+extern "C" unsigned long UNK_006064e2;
+extern "C" unsigned long _DAT_004e4860;
+extern "C" unsigned long _UNK_006064f0;
+extern "C" unsigned long g_004e4860;
+extern "C" unsigned long g_006064e2;
+extern "C" unsigned long g_006064f0;
+BLUpdatePublishUI::BLUpdatePublishUI()
+{
+  int *piVar1;
+  int iVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  code *pcVar5;
+  undefined4 uStack_28;
+  undefined4 uStack_24;
+  undefined1 auStack_20 [12];
+  
+  0 /* ctorZero */;
+  /* VPTR_FIX: 原始为 *(int*)this = *(int*)(g_XXXX+0xYYYY)+8; 该 g_ 未解析会 segfault; 我们的类由编译器设 vptr, 故略过 */;
+  piVar1 = (int *)((long long)::operator new((size_t)(0x140)));
+  0 /* ctorZero */;
+  iVar2 = (**(code **)(*piVar1 + 0x18))(piVar1);
+  if (iVar2 == 0) {
+    (**(code **)(*piVar1 + 8))(piVar1);
+    piVar1 = (int *)0x0;
+  }
+  else {
+    ((cocos2d::CCObject *)piVar1)->autorelease();
+  }
+  *(int *)((int)this + 4*(9)) = (int)piVar1;
+  uVar3 = (undefined4)(cocos2d::CCDirector::sharedDirector());
+  *(CCSize *)&uStack_28 = ((cocos2d::CCDirector *)uVar3)->getWinSize();
+  (**(code **)(*(int *)*(int *)((int)this + 4*(6)) + 200))((int *)*(int *)((int)this + 4*(6)),*(int *)((int)this + 4*(9)));
+  piVar1 = (int *)*(int *)((int)this + 4*(9));
+  pcVar5 = *(code **)(*piVar1 + 0x4c);
+  uVar3 = (undefined4)(((long long)([](int _a,int _b){float _x,_y;__builtin_memcpy(&_x,&_a,4);__builtin_memcpy(&_y,&_b,4);float _r=(_x * _y);int _o;__builtin_memcpy(&_o,&_r,4);return _o;}((int)(uStack_28),(int)(0x3f000000)))));
+  uVar4 = (undefined4)(((long long)([](int _a,int _b){float _x,_y;__builtin_memcpy(&_x,&_a,4);__builtin_memcpy(&_y,&_b,4);float _r=(_x * _y);int _o;__builtin_memcpy(&_o,&_r,4);return _o;}((int)(uStack_24),(int)(0x3f000000)))));
+  0 /* ctorZero */;
+  (*pcVar5)(piVar1,auStack_20);
+  return;
+}
+
+int * BLUpdatePublishUI::create()
+{
+  int *piVar1;
+  int iVar2;
+  
+  piVar1 = (int *)((long long)::operator new((size_t)(0x28)));
+  0 /* ctorZero */;
+  iVar2 = (**(code **)(*piVar1 + 0x38))(piVar1);
+  if (iVar2 == 0) {
+    (**(code **)(*piVar1 + 8))(piVar1);
+    piVar1 = (int *)0x0;
+  }
+  else {
+    ((cocos2d::CCObject *)piVar1)->autorelease();
+  }
+  return (int *)(piVar1);
+}
+
+void BLUpdatePublishUI::tick(float p1)
+{
+  return;
+}
+
+BLUpdatePublishUI::~BLUpdatePublishUI()
+{
+  /* VPTR_FIX(R87): vptr=(&g_A+g_B)+8 ?? g_ ?? 0 ?? -> ???? SEGV?????? vptr???? */;
+  UIObject::~UIObject();
+  return;
+}

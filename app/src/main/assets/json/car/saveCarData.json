@@ -1,0 +1,8 @@
+{
+    "uid": "%s",
+    "chariotId": %d,
+    "attack"  :[ %s ],
+    "defense" :[ %s ],
+    "life"    :[ %s ],
+    "speed"   :[ %s ]
+}

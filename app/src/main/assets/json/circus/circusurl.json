@@ -1,0 +1,57 @@
+[
+	{
+	    "urlid": 0,
+	    "httpstatus": 0,
+	    "value1": "uid"
+	},
+	{
+	    "urlid": 1,
+	    "httpstatus": 0,
+	    "value1": "owner"
+	},								
+	{
+	    "urlid": 2,
+	    "httpstatus": 0,
+	    "value1": "opp"
+	},
+	{
+	    "urlid": 3,
+	    "httpstatus": 0,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 4,
+	    "httpstatus": 0,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 5,
+	    "httpstatus": 2,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 6,
+	    "httpstatus": 1,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 7,
+	    "httpstatus": 0,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 8,
+	    "httpstatus": 2,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 9,
+	    "httpstatus": 0,
+	    "value1": "chall"
+	},
+	{
+	    "urlid": 10,
+	    "httpstatus": 0,
+	    "value1": "chall"
+	}
+}

@@ -1,0 +1,27 @@
+#pragma once
+// BLProgressBar
+// 基类: cocos2d::CCLayer
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLProgressBar : public cocos2d::CCLayer {
+public:
+    int * create();
+    void onExit();
+    void onEnter();
+    bool init();
+    ~BLProgressBar();
+    BLProgressBar();
+    undefined8 setPercentage(float);
+    void setProgressAndWidth(cocos2d::extension::CCScale9Sprite*, cocos2d::extension::CCScale9Sprite*, float);
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x114?276 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[276];
+};

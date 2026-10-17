@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="g_class_name">com.DBGame.DiabloLOL.SplashActivity</string>
+    <string name="gc_billing_islow_version">false</string>
+    <string name="gc_billing_is_no_sound">false</string>
+    <string name="gc_billing_title">中国移动手机游戏</string>
+    <string name="gc_billing_title_2">感谢您支持正版游戏</string>
+    <string name="gc_billing_sending">正在发送激活短信！</string>
+    <string name="gc_billing_info_sms_1">尊敬的用户，您即将购买：</string>
+    <string name="gc_billing_info_sms_2">游戏名称:{0}</string>
+    <string name="gc_billing_info_sms_3">提供商:{0}</string>
+    <string name="gc_billing_info_sms_4">客服电话:{0}</string>
+    <string name="gc_billing_info_sms_6">{0}</string>
+    <string name="gc_billing_info_sms_7">需支付</string>
+    <string name="gc_billing_info_sms_0">{0}元（折合{1}点）</string>
+    <string name="gc_billing_info_sms_8">请点击确定发送短信购买</string>
+    <string name="gc_billing_info_sms_9">请点击确定确认购买</string>
+    <string name="gc_billing_error_network">网络连接失败，请设置网络后重试！</string>
+    <string name="gc_billing_ok">购买成功！</string>
+    <string name="gc_billing_ok_history">您已购买！</string>
+    <string name="gc_billing_ok_order">您已订购！</string>
+    <string name="gc_billing_fail">您的付费操作失败了，请稍后重试！</string>
+    <string name="gc_billing_require">"若不进行付费，您将无法获得
+更好的游戏体验，是否确认？"</string>
+    <string name="gc_billing_no_simcard">短信激活失败，请检查SIM卡！</string>
+    <string name="gc_billing_simcard_unavailable">没有可用中国移动SIM卡！</string>
+    <string name="gc_billing_check_network">找不到可用网络，请检查您当前的网络设置！</string>
+    <string name="gc_billing_network_for_billing">您正在使用的游戏业务需要联网才能保证支付安全，请开启您的网络连接后重试！</string>
+    <string name="gc_billing_network_airplane">当前设备处于飞行模式，无可用网络！</string>
+    <string name="gc_billing_network_multi">当前设备存在重复网络，无可用网络！</string>
+    <string name="gc_billing_cmgc_game_tag">此游戏没有配置中国移动标识信息，不能继续使用！</string>
+    <string name="gc_billing_invalid_china_mobile_card">请输入有效的移动手机号码！</string>
+    <string name="gc_billing_fail_phone">您的购买请求失败啦，请尝试输入手机号码进行计费！</string>
+    <string name="gc_billing_fail_vericode">短信验证码获取失败</string>
+    <string name="gc_billing_no_charge">未找到购买信息！</string>
+    <string name="gc_billing_no_vericode">请输入您收到的短信验证码！</string>
+    <string name="gc_billing_no_phone_number">未找到手机号码，请重试！</string>
+    <string name="gc_billing_net_verifycode">请输入短信验证码</string>
+    <string name="gc_billing_net_verifycode_1">请在确认游戏付费前，正确输入您手机上收到的随机短信验证码。</string>
+    <string name="gc_billing_net_verifycode_2">短信验证码在5分钟内有效，超过时间内仍未收到验证码，建议您稍后重试。</string>
+    <string name="gc_billing_net_phone">请输入{0}</string>
+    <string name="gc_billing_net_phone_2">中国移动号码</string>
+    <string name="gc_billing_more_time_error">您的付费请求太频繁，请稍后重试！</string>
+    <string name="gc_billing_net_contacts">选择好友</string>
+    <string name="gc_billing_net_sub">立即订购</string>
+    <string name="gc_billing_net_frend">好友代付</string>
+    <string name="gc_billing_net_contacts_error">没有找到联系人，您可以手动输入付费手机号码</string>
+    <string name="gc_billing_member_info">成为会员，本游戏免费</string>
+    <string name="gc_billing_package_info">订购{0}包，本游戏免费</string>
+    <string name="gc_billing_more">更多游戏</string>
+    <string name="gc_billing_gamehall">游戏大厅</string>
+    <string name="gc_billing_member_right">会员权益</string>
+    <string name="gc_billing_member_right_1">"会
+员
+权
+益"</string>
+    <string name="gc_billing_monthly_orger">包月权益</string>
+    <string name="gc_billing_monthly_orger_1">"包
+月
+权
+益"</string>
+    <string name="gc_billing_member_name">会员名称：{0}</string>
+    <string name="gc_billing_member_pay">会员资费：{0}/月</string>
+    <string name="gc_billing_member_partner">合作伙伴：{0}</string>
+    <string name="gc_billing_gamepay_1">"游
+戏
+支
+付"</string>
+    <string name="gc_billing_gamepay">游戏支付</string>
+    <string name="gc_billing_otherpay_1">"其
+他
+支
+付"</string>
+    <string name="gc_billing_otherpay">其他支付</string>
+    <string name="gc_billing_pay_land">"游
+戏
+支
+付"</string>
+    <string name="gc_billing_rights_member_land">"会
+员
+权
+益"</string>
+    <string name="gc_billing_rights_normal_land">"包
+月
+权
+益"</string>
+    <string name="gc_billing_order_again">重新订购</string>
+    <string name="gc_billing_game_again">继续游戏</string>
+    <string name="gc_billing_continue_game">"游
+戏
+支
+付"</string>
+    <string name="gc_billing_purchase">　确　定　</string>
+    <string name="gc_billing_member_enter">立即加入</string>
+    <string name="gc_billing_package_enter">包月订购</string>
+    <string name="gc_billing_member_join">加入会员</string>
+    <string name="gc_billing_package_join">立即订购</string>
+    <string name="gc_billing_member_more">更多会员免费游戏</string>
+    <string name="gc_billing_get_vericode">获取验证码</string>
+    <string name="gc_billing_no_network_tip">您的终端没有开启网络连接，您将不能享受包月业务及其他营销活动</string>
+    <string name="gc_billing_order_tip">您即将订购{0}，每月数款游戏免费畅玩，仅需{1}/月。</string>
+    <string name="gc_billing_order_member_tip">您即将加入{0}，成为中国移动游戏会员，尊享价值百元热门游戏免费畅玩，仅需{1}/月。</string>
+    <string name="gc_billing_order_succ_tip">恭喜您成功订购{0}，本游戏可免费畅玩。</string>
+    <string name="gc_billing_order_succ_member_tip">恭喜您已成为中国移动游戏会员！本游戏已可免费畅玩。</string>
+    <string name="gc_billing_order_fail_tip_1">订购失败，您可以继续游戏，或稍后重试。</string>
+    <string name="gc_billing_order_fail_tip_2">订购失败，该游戏产品不存在。</string>
+    <string name="gc_billing_order_fail_tip_3">订购失败，您可以重新登录尝试。</string>
+    <string name="gc_billing_order_fail_tip_4">该产品已订购，可继续使用。</string>
+    <string name="gc_billing_order_fail_tip_5">订购失败，您的余额不足。</string>
+    <string name="gc_billing_order_fail_tip_6">请求系统已受理，请稍后查看。</string>
+    <string name="gc_billing_order_player_price">5.00元/</string>
+    <string name="gc_billing_open_network_tip">是否开启网络连接?</string>
+    <string name="gc_billing_exit_tip">确定退出游戏?</string>
+    <string name="gc_billing_is_no_network_tip">false</string>
+    <string name="gc_billing_newest_version">您当前是最新版本，无需升级！</string>
+    <string name="gc_billing_unknown_server_error">系统繁忙，请稍候再试！</string>
+    <string name="gc_billing_update_prompt">检测到新版本，是否升级？</string>
+    <string name="gc_billing_update_yes">现在升级</string>
+    <string name="gc_billing_update_no">以后再说</string>
+    <string name="gc_billing_timeout">请求超时！</string>
+    <string name="gc_billing_dialog_information">提示</string>
+    <string name="gc_alipay_login_account_or_password_null">账号或密码为空,请重新输入。</string>
+    <string name="gc_alipay_login_need_avail_account">请输入有效的帐号！</string>
+    <string name="gc_alipay_login_need_avail_password">请输入有效的密码！</string>
+    <string name="gc_billing_dialog_exit">退出</string>
+    <string name="gc_billing_dialog_sure">确定</string>
+    <string name="gc_billing_dialog_clear">取消</string>
+    <string name="gc_billing_dialog_reject">不购买</string>
+    <string name="gc_billing_dialog_positive">继续</string>
+    <string name="gc_billing_dialog_cancel">返　回</string>
+    <string name="gc_billing_dialog_cancel_1">返回</string>
+    <string name="gc_billing_dialog_getverifycode_again">再次获取</string>
+    <string name="gc_billing_dialog_getting_verifycode">正在获取({0})</string>
+    <string name="gc_billing_dialog_handling">正在处理</string>
+    <string name="gc_billing_dialog_point">.</string>
+    <string name="gc_billing_dialog_download_tip">您即将要下载的游戏:{0},游戏大小:{1},确认要下载么?</string>
+    <string name="gc_download_ok">下载完成！</string>
+    <string name="gc_gameDetail_cpname">提供商:{0}</string>
+    <string name="gc_gameDetail_download">下载热度:{0}</string>
+    <string name="gc_gameDetail_category">类别:{0}</string>
+    <string name="gc_game_detail">详情：</string>
+    <string name="gc_game_introduction">介绍：</string>
+    <string name="gc_game_screenshots">截图：</string>
+    <string name="gc_game_download">下载</string>
+    <string name="gc_game_title">游戏详情</string>
+    <string name="gc_unexpected_response_format">未知格式的响应内容！</string>
+    <string name="gc_no_sdcard">检测到您手机中没有SD卡，无法下载！</string>
+    <string name="gc_loading">正在处理...</string>
+    <string name="gc_yes">是</string>
+    <string name="gc_no">否</string>
+    <string name="gc_note">通知</string>
+    <string name="gc_close">关闭</string>
+    <string name="gc_into">查看</string>
+    <string name="gc_exit">是否确认退出？</string>
+    <string name="gc_mess">消息</string>
+    <string name="gc_discount_level">您目前等级为{0}级，</string>
+    <string name="gc_discount_vip">您目前为高级会员，等级为{0}级，</string>
+    <string name="gc_discount_player">您已成为{0}，</string>
+    <string name="gc_discount_info">享受{1}折优惠，现价{2}元({3}点)</string>
+    <string name="gc_discount_promotion">现在是{0}，{1}折优惠，现价{2}元({3}点)</string>
+    <string name="gc_discount_promotion_tip">活动期间</string>
+    <string name="gc_discount_activity">现在是{1}，享受{2}折优惠，现价{3}元({4}点)</string>
+    <string name="gc_discount_tip">成为会员可享{0}特惠</string>
+    <string name="gc_discount_tip_1">8折</string>
+    <string name="gc_discount_player_tip_0">成为</string>
+    <string name="gc_discount_player_tip_1">游戏玩家</string>
+    <string name="gc_discount_player_tip_2">享受更多优惠</string>
+    <string name="gc_discount_player_tip_3">您即将加入游戏玩家，成为中国移动游戏会员，尊享价值百元热门游戏免费畅玩，千款游戏8折特惠，仅需5.00元/月。</string>
+    <string name="gc_discount_player_success">恭喜您已成为中国移动游戏会员！此游戏可享8折特惠。</string>
+    <string name="gc_billing_player_discount">成为会员，可享8折特惠</string>
+    <string name="gc_billing_message_title">标题: {0}</string>
+    <string name="gc_billing_message_content">内容: {0}</string>
+    <string name="gc_billing_piccode_tip0">验证码:</string>
+    <string name="gc_billing_piccode_tip1">不区分大小写</string>
+    <string name="gc_billing_piccode_tip2">看不清，换一张</string>
+    <string name="gc_package_account">用户名</string>
+    <string name="gc_package_password">密　码</string>
+    <string name="gc_package_login_remind">登录移动用户中心</string>
+    <string name="gc_package_remember_account">记住帐号</string>
+    <string name="gc_net_remember_account">记住号码</string>
+    <string name="gc_package_loginning">正在登录...</string>
+    <string name="gc_package_login">登录</string>
+    <string name="gc_package_no_login">您当前没有登录，订购失败，请稍后重试</string>
+    <string name="gc_package_register">帐号注册</string>
+    <string name="gc_start_music_ask">是否开启音效？</string>
+    <string name="gc_start_music_tip_1">温馨提示：</string>
+    <string name="gc_start_music_tip_2">在医院、办公室等公共场所</string>
+    <string name="gc_start_music_tip_3">请关闭游戏音效</string>
+    <string name="gc_security_sms_err">短信验证码验证失败</string>
+    <string name="gc_security_pic_err">图形验证码验证失败</string>
+    <string name="gc_security_pic_no">获取图形验证码失败，请重试</string>
+    <string name="gc_security_password_err">支付密码获取失败</string>
+    <string name="gc_mix_billing_info_1">请输入密码！</string>
+    <string name="gc_mix_billing_info_2">密码输入有误，请输入6-20的数字或字母！</string>
+    <string name="gc_mix_billing_info_3">两次密码不一致，请重新输入！</string>
+    <string name="gc_mix_billing_info_4">记住密码</string>
+    <string name="gc_mix_billing_info_5">用户{0}，请输入用户中心密码</string>
+    <string name="gc_mix_billing_info_6">设置用户中心密码</string>
+    <string name="gc_mix_billing_info_7">手机号: {0}</string>
+    <string name="gc_mix_billing_info_8">输入新密码</string>
+    <string name="gc_mix_billing_info_9">确认新密码</string>
+    <string name="gc_mix_billing_info_10">设置密码</string>
+    <string name="gc_mix_billing_info_11">设置密码成功！</string>
+    <string name="gc_mix_billing_info_12">设置密码失败！</string>
+    <string name="gc_mix_billing_login_fail">登录失败！</string>
+    <string name="gc_recharge_title">填写充值信息</string>
+    <string name="gc_recharge_account">充值账号：{0}</string>
+    <string name="gc_recharge_point">充值点数：</string>
+    <string name="gc_recharge_amount">充值金额：{0}（元）</string>
+    <string name="gc_recharge_point_unit">"{0}点
+（{1}元）"</string>
+    <string name="gc_recharge_other_point_hint">请输入其他点数</string>
+    <string name="gc_recharge_other_point_remind">注：充值点数须为整数</string>
+    <string name="gc_recharge_btn_next_step">下一步</string>
+    <string name="gc_recharge_discount_title">充值优惠：</string>
+    <string name="gc_recharge_discount_content">暂无优惠信息</string>
+    <string name="gc_recharge_way">充值方式：</string>
+    <string name="gc_recharge_affirm_title">确认订单</string>
+    <string name="gc_recharge_btn_affirm">确认无误，支付</string>
+    <string name="gc_recharge_btn_last_step">上一步</string>
+    <string name="gc_purchase_remind">支付提醒:</string>
+    <string name="gc_purchase_current_balance">当前用户中心账户余额{0}点</string>
+    <string name="gc_purchase_balance_info_1">您将通过扣除{0}元话费，自动充值成{1}点进行支付</string>
+    <string name="gc_purchase_balance_info_2">您将使用账户余额支付{0}点，剩余部分通过扣除{1}元话费，自动充值成{2}点进行支付</string>
+    <string name="gc_purchase_balance_info_3">你将使用账户余额支付{0}点</string>
+    <string name="gc_recharge_other_point_unit">点（{0}元）</string>
+    <string name="gc_rechage_max_remind">每次充值金额上限100000点（折合人民币1000元）！</string>
+    <string name="gc_recharge_amount_null">请选择需要充值的点数！</string>
+    <string name="gc_recharge_point_success">已成功充值</string>
+    <string name="gc_recharge_point_failure">未成功充值</string>
+    <string name="gc_recharge_point_message">是否支付宝充值成功？</string>
+    <string name="gc_purcharse_fail_remind_title">支付提醒</string>
+    <string name="gc_purcharse_fail_remind_content">话费余额不足，支付失败，您可以选择第三方充值点数进行支付</string>
+    <string name="gc_recharge_fail_no_login_user">暂无法充值，请稍后重试</string>
+    <string name="gc_gamepad_supported">true</string>
+    <string name="gc_gamepad_auto_connected">true</string>
+    <string name="gc_gamepad_dialog_connect_tip">"此游戏支持中国移动游戏手柄，
+您会得到更好的游戏体验。"</string>
+    <string name="gc_gamepad_dialog_connect_tip_2">是否接入游戏手柄</string>
+    <string name="gc_gamepad_dialog_init_btn_connect">连接手柄</string>
+    <string name="gc_gamepad_dialog_init_btn_open">开启手柄</string>
+    <string name="gc_gamepad_dialog_init_btn_game">继续游戏</string>
+    <string name="gc_gamepad_dialog_bind">立刻绑定</string>
+    <string name="gc_gamepad_bind_tip">绑定您的手柄，可以获得更好的游戏体验，是否立即进行绑定？</string>
+    <string name="gc_gamepad_dialog_scaned">已经为您找到一款手柄，请连接。</string>
+    <string name="gc_gamepad_dialog_state_2">您已绑定当前手柄设备</string>
+    <string name="gc_gamepad_dialog_state_3">您已绑定其他手柄设备，是否进入游戏大厅进行重新绑定？</string>
+    <string name="gc_gamepad_dialog_state_4">当前手柄设备已绑定其他用户</string>
+    <string name="gc_gamepad_dialog_connecting">正在连接，请稍等...</string>
+    <string name="gc_gamepad_dialog_connect_ok">智能手柄已连接</string>
+    <string name="gc_gamepad_dialog_connect_none">没有找到可用手柄设备，请开启手柄后重试</string>
+    <string name="gc_gamepad_dialog_connect_fail">连接失败,请尝试重启手柄设备</string>
+    <string name="gc_gamepad_dialog_connect_lost">连接丢失</string>
+    <string name="gc_gamepad_dialog_connect_fail_gh">此游戏支持中国移动游戏手柄，请安装中国移动游戏大厅后，连接使用</string>
+    <string name="gc_gamepad_dialog_find_nothing">没有找到任何可连接的手柄设备，请稍后重试...</string>
+    <string name="gc_gamepad_dialog_find_multi">发现多个智能手柄，请进入游戏大厅选择连接</string>
+    <string name="gc_gamepad_dialog_low_battery">智能手柄电量低，请尽快充电</string>
+    <string name="gc_gamepad_input_pwd_tip">请输入您的支付密码:</string>
+    <string name="gc_gamepad_input_reset_tip">按LT键重置</string>
+    <string name="gc_gamepad_unavailable_pwd_tip">请输入有效的支付密码！</string>
+    <string name="gc_gamepad_confirm_pay_with_session">您即将通过游戏手柄完成购买，是否确认？</string>
+    <string name="gc_gamepad_confirm_pay">确定(Start)</string>
+    <string name="gc_gamepad_confirm_cancel">返回(Select)</string>
+    <string name="gc_gamepad_prompt_sure">确定(A)</string>
+    <string name="gc_gamepad_prompt_back">返回(B)</string>
+    <string name="gc_gamepad_prompt_yes">是(A)</string>
+    <string name="gc_gamepad_prompt_no">否(B)</string>
+    <string name="gc_gamepad_errcode_201220">设备码查询失败！</string>
+    <string name="gc_gamepad_errcode_201221">支付码校验失败！</string>
+    <string name="gc_gamepad_errcode_201222">请求付费订单号失败！</string>
+    <string name="gc_gamepad_errcode_999999">手机付费失败，请进入大厅确认手柄与手机绑定关系后，重试！</string>
+    <string name="gc_leaderboard_apply_empty_content">暂无好友申请！</string>
+    <string name="gc_leaderboard_search_empty_content">无搜索结果</string>
+    <string name="gc_leaderboard_contacts_empty_content">无通讯录好友</string>
+    <string name="gc_leaderboard_create_record">去创造记录吧！</string>
+    <string name="gc_leaderboard_friend">好友排行榜</string>
+    <string name="gc_leaderboard_player">玩家排行榜</string>
+    <string name="gc_leaderboard_land_friend">"好
+友
+排
+行
+榜"</string>
+    <string name="gc_leaderboard_land_player">"玩
+家
+排
+行
+榜"</string>
+    <string name="gc_leaderboard_invite">邀请</string>
+    <string name="gc_leaderboard_invited">已邀请</string>
+    <string name="gc_leaderboard_error_loading">加载数据错误！</string>
+    <string name="gc_leaderboard_loading">正在加载...</string>
+    <string name="gc_leaderboard_item_data_is_null">该条目数据获取失败</string>
+    <string name="gc_leaderboard_invite_friend">手机通讯录中的好多朋友都还没有玩过这个游戏哦！</string>
+    <string name="gc_leaderboard_check_contacts">查看手机通讯录</string>
+    <string name="gc_leaderboard_add_friend_title">添加好友</string>
+    <string name="gc_leaderboard_add_friend_from_contacts">从手机通讯录中添加好友　>></string>
+    <string name="gc_leaderboard_search_friend">"搜索添
+加好友"</string>
+    <string name="gc_leaderboard_search_hint">手机号/邮箱/个性帐号</string>
+    <string name="gc_leaderboard_search_result_title">TA想与你成为好友</string>
+    <string name="gc_leaderboard_apply_accept">同意</string>
+    <string name="gc_leaderboard_apply_ignore">忽略</string>
+    <string name="gc_leaderboard_friend_request">想与你成为好友</string>
+    <string name="gc_leaderboard_btn_add_friend">加为好友</string>
+    <string name="gc_leaderboard_btn_friend">已是好友</string>
+    <string name="gc_leaderboard_search_result">搜索结果</string>
+    <string name="gc_leaderboard_current_rank">当前等级：</string>
+    <string name="gc_leaderboard_start_game">开始游戏</string>
+    <string name="gc_leaderboard_list_item_add">加好友</string>
+    <string name="gc_leaderboard_search_edittext_null">请输入要搜索的用户帐号！</string>
+    <string name="gc_leaderboard_processing">正在处理，请稍候...</string>
+    <string name="gc_leaderboard_add_friend_success">请求成功！</string>
+    <string name="gc_leaderboard_waiting_check">等待验证</string>
+    <string name="gc_leaderboard_default_nick_name">匿名</string>
+    <string name="gc_leaderboard_empty_score">暂无成绩</string>
+    <string name="gc_leaderboard_notify_apply_title">好友申请</string>
+    <string name="gc_leaderboard_notify_invite_title">好友邀请</string>
+    <string name="gc_leaderboard_current_high_score">您的最高记录　{0}</string>
+    <string name="gc_leaderboard_friend_accept_ok">接受成功，您已和TA成为好友！</string>
+    <string name="gc_leaderboard_friend_accept_failed">接受失败！</string>
+    <string name="gc_leaderboard_friend_reject_ok">忽略成功！</string>
+    <string name="gc_leaderboard_friend_reject_failed">忽略失败！</string>
+    <string name="gc_leaderboard_commit_score_ok">分数上传成功！</string>
+    <string name="gc_leaderboard_commit_score_failed">分数上传失败！</string>
+    <string name="gc_leaderboard_not_adressbook">通讯录好友获取失败！</string>
+    <string name="gc_leaderboard_login_need">您需要登录移动用户中心，才能完成本次操作！</string>
+    <string name="gc_leaderboard_contacts_search">"通讯录
+内搜索"</string>
+    <string name="gc_leaderboard_contacts_search_hint">搜索</string>
+    <string name="gc_leaderboard_contacts_next_page">正在加载下一页...</string>
+    <string name="gc_leaderboard_empty_friend_scores">暂无排行信息！</string>
+    <string name="hh_splash_successed_name">com.DBGame.DiabloLOL.SplashActivity</string>
+    <string name="hh_splash_failed_name">com.DBGame.DiabloLOL.SplashActivity</string>
+    <string name="app_name">火柴人联盟</string>
+    <string name="share_title">分享</string>
+    <string name="no_share_app">无可分享应用</string>
+    <string name="share_to">分享到</string>
+    <string name="cancel">取消</string>
+    <string name="main_share_content">脸滚键盘？无脑操作？那些low爆了的玩法模式我们不约。想风骚走位前排输出，想各种花式吊打boss，想最6666的玩法操作，我在#火柴人联盟#中等你，你可敢与我一战？ http://huo.dl.hoolaigames.com/hcrlm.apk</string>
+    <string name="queren">确认</string>
+    <string name="quxiao">取消</string>
+    <string name="weberror">网络错误，要继续连接吗</string>
+    <string name="announcement">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</string>
+    <string name="get_user_title">获取Qihoo UserInfo</string>
+    <string name="get_user_message">正在请求应用服务器,请稍候……</string>
+</resources>

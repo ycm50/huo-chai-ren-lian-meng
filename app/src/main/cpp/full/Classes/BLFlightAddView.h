@@ -1,0 +1,30 @@
+#pragma once
+// BLFlightAddView
+// 基类: cocos2d::CCLayer
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLFlightAddView : public cocos2d::CCLayer {
+public:
+    ~BLFlightAddView();
+    BLFlightAddView();
+    int * create();
+    undefined4 getPresenter();
+    undefined4 getBtbQuit();
+    undefined4 getBtnRelife();
+    undefined4 getLabeTip();
+    undefined4 getLabRelife();
+    void onEnter();
+    void onExit();
+    bool init();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x11c?284 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[284];
+};

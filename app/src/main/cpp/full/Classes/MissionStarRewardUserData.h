@@ -1,0 +1,26 @@
+#pragma once
+// MissionStarRewardUserData
+// 基类: MissionStarRewardUserItemData
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+#include "MissionStarRewardUserItemData.h"
+
+
+class MissionStarRewardUserData : public MissionStarRewardUserItemData {
+public:
+    MissionStarRewardUserData();
+    ~MissionStarRewardUserData();
+    void toString();
+    void initWithData(std::string&);
+    undefined4 getItemData(int);
+    void acceptReward(int, int);
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0xc?12 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[12];
+};

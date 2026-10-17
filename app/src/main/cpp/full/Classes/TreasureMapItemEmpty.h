@@ -1,0 +1,28 @@
+#pragma once
+// TreasureMapItemEmpty
+// 基类: TreasureMapItemBase
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+#include "TreasureMapItemBase.h"
+
+
+class TreasureMapItemEmpty : public TreasureMapItemBase {
+public:
+    void beforeTrigger();
+    void onTrigger();
+    void reset();
+    void toString();
+    void triggerEnd();
+    ~TreasureMapItemEmpty();
+    TreasureMapItemEmpty();
+    void initWithData(std::string);
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x24?36 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[36];
+};

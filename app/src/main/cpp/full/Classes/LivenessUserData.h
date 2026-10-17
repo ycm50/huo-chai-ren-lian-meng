@@ -1,0 +1,30 @@
+#pragma once
+// LivenessUserData
+// 基类: (无)
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class LivenessUserData {
+public:
+    void sortByLivness();
+    ~LivenessUserData();
+    undefined8 getItemData(int);
+    longlong sortByStatus();
+    int getReceivableCount();
+    void clearAllData();
+    void statisticsData(int, int);
+    void updateRewardData();
+    void receiveReward(int);
+    void initData();
+    LivenessUserData();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x40?64 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[64];
+};

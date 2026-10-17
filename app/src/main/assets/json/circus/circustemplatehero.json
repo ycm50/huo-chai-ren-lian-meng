@@ -1,0 +1,9 @@
+{
+    "id": %d,
+    "level": %d,
+    "fightingCapacity": %llu,
+    "attack": %llu,
+    "defense": %llu,
+    "life": %llu,
+    "crit": %llu
+}

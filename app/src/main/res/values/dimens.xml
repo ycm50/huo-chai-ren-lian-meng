@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="web_width">400.0dip</dimen>
+    <dimen name="web_height">158.0dip</dimen>
+    <dimen name="web_width1">476.0dip</dimen>
+    <dimen name="web_height1">232.0dip</dimen>
+    <dimen name="web_x">115.0dip</dimen>
+    <dimen name="web_y">100.0dip</dimen>
+</resources>

@@ -1,0 +1,31 @@
+#pragma once
+// TalentUserItemData
+// 基类: (无)
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class TalentUserItemData {
+public:
+    int getId() const;
+    void setId(int);
+    int getLv() const;
+    void setLv(int);
+    bool getIsOpen() const;
+    void setIsOpen(bool);
+    bool getIsSelected() const;
+    void setIsSelected(bool);
+    TalentUserItemData();
+    ~TalentUserItemData();
+    void initWith(int);
+    void initWith(char**, int&);
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x10?16 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[16];
+};

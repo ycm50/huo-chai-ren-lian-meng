@@ -1,0 +1,13 @@
+{
+	"uid":"%s",
+	"type":1,
+    "point": %llu,
+    "partitionId": %d,
+    "contestCount": %d,
+    "rank": %d,
+    "name": "%s",
+    "fightCapacity": %llu,
+    "reward": %llu,
+    "yesterdayRank": %d,
+    "lineup":[%s] 
+}

@@ -1,0 +1,25 @@
+#pragma once
+// BLSuitComposeInfoItemPresenter
+// 基类: cocos2d::CCObject
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLSuitComposeInfoItemPresenter : public cocos2d::CCObject {
+public:
+    ~BLSuitComposeInfoItemPresenter();
+    void onClick(cocos2d::CCObject*, unsigned int);
+    BLSuitComposeInfoItemPresenter();
+    undefined4 create();
+    void initWithView(BLSuitComposeInfoItemView*);
+    void initWithData(int);
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x1c?28 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[28];
+};

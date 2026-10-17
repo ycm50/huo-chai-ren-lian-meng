@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/logo" android:background="@drawable/splash_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/linlayout0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0dip" android:textColor="@color/black" android:id="@id/tipAnnouncement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/announcement" android:layout_alignLeft="@id/tipPpublished" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/linlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dip" android:textColor="@android:color/black" android:layout_gravity="right" android:id="@id/tipVerion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="version" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@android:color/black" android:id="@id/tipPpublished" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="published" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

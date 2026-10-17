@@ -1,0 +1,569 @@
+{
+ "debug_url": [
+  {
+   "sign_content": "登录相关数据",
+   "url_dailysign_curtime": "http://127.0.0.1:8080/stickman/api/v1/loginReward/getLoginRewardInfo",
+   "url_dailysign_getreward": "http://127.0.0.1:8080/stickman/api/v1/loginReward"
+  },
+  {
+   "ad_content": "广告相关链接",
+   "url_ad_getDate": "http://127.0.0.1:8080/stickman/api/v1/ads/getAdsUserInfo",
+   "url_ad_saveDate": "http://127.0.0.1:8080/stickman/api/v1/ads/saveAdsItemsRewards"
+  },
+  {
+   "fankui_content": "反馈相关数据网页",
+   "url_fankui_count": "http://127.0.0.1:8080/index.php?action=FeedBack.notify&game=%s&id=%s",
+   "url_fankui_view1": "http://127.0.0.1:8080/huochairen/faq.html",
+   "url_fankui_view2": "http://127.0.0.1:8080/stickmanb/app/customer.html?uid=%s&appkey=%s&ch=%s&andver=%d"
+  },
+  {
+   "login_content": "登陆，注册，获取注册信息相关数据",
+   "url_user_email": "http://127.0.0.1:8080/stickman/api/v1/account/getRegisterInfo",
+   "url_user_login": "http://127.0.0.1:8080/stickman/api/v1/account/login",
+   "url_user_zhuce": "http://127.0.0.1:8080/stickman/api/v1/account",
+   "url_user_findpassword": "http://127.0.0.1:8080/stickman/api/v1/account/getRegisterInfo",
+   "url_user_zhucexinxi": "http://127.0.0.1:8080/stickman/api/v1/account/getRegisterInfo?version=%s&channel=%s"
+  },
+  {
+   "notice_content": "公告相关数据",
+   "url_user_notice": "http://127.0.0.1:8080/stickman/api/v1/bulletin/%s?version=%s&channel=%s"
+  },
+  {
+   "notice_content": "战车相关数据",
+   "url_user_car": "http://127.0.0.1:8080/stickman/api/v1/chariot/getUserChariot",
+   "url_user_car_buyNum": "http://127.0.0.1:8080/stickman/api/v1/chariot/buyChariotNum",
+   "url_user_save_car": "http://127.0.0.1:8080/stickman/api/v1/chariot/saveUserChariot",
+   "url_user_get_user_data": "http://127.0.0.1:8080/stickman/api/v1/chariot/getChariotIsUnLocked",
+   "url_user_save_user_data": "http://127.0.0.1:8080/stickman/api/v1/chariot/saveChariotIsUnLocked"
+  },
+  {
+   "notice_content": "英雄招募相关数据",
+   "url_zhaomu_get_reward_data": "http://127.0.0.1:8080/stickman/api/v1/heroDraw"
+  },
+  {
+   "data_content": "游戏数据相关数据",
+   "url_data_save": "http://127.0.0.1:8080/stickman/api/v1/account/saveGameData?version=%s&channel=%s&fightCapacity=%d",
+   "url_data_check": "http://127.0.0.1:8080/stickman/api/v1/account/isSaveGameData?fightCapacity=%d",
+   "url_data_get": "http://127.0.0.1:8080/stickman/api/v1/account/getGameData",
+   "url_data_getdownloadnum": "http://127.0.0.1:8080/stickman/api/v1/account/getDownloadNum",
+   "url_data_updatedownloadnum": "http://127.0.0.1:8080/stickman/api/v1/account/updateDownloadNum"
+  },
+  {
+   "circus_content": "擂台赛相关数据：总表，个人，敌人，pvp，英雄，修改属性，上传结果，下载排行，上传领取奖励，排行刷新时间，下载zip，上传zip，修改name",
+   "url_circus_challenge": "http://127.0.0.1:8080/stickman/api/v1/users/%s/contests",
+   "url_circus_owner": "http://127.0.0.1:8080/stickman/api/v1/users/%s",
+   "url_circus_opponent": "http://127.0.0.1:8080/stickman/api/v1/opponent/%s",
+   "url_circus_pvprecode": "http://127.0.0.1:8080/stickman/api/v1/users/%s/records",
+   "url_circus_herorecode": "http://127.0.0.1:8080/stickman/api/v1/opponents?count=100&sort=rank",
+   "url_circus_modify": "http://127.0.0.1:8080/stickman/api/v1/users",
+   "url_circus_revenge": "http://127.0.0.1:8080/stickman/api/v1/users/%s/records",
+   "url_circus_downranking": "http://127.0.0.1:8080/stickman/api/v1/rankReward/%s",
+   "url_circus_upranking": "http://127.0.0.1:8080/stickman/api/v1/rankReward",
+   "url_circus_rankingtime": "http://127.0.0.1:8080/stickman/api/v1/getServerTime",
+   "url_circus_downzip": "http://127.0.0.1:8080/stickman/api/v1/records/getRecordVideo?record_id=%s",
+   "url_circus_upzip": "http://127.0.0.1:8080/stickman/api/v1/records/saveReocrdVideo?record_id=%s",
+   "url_circus_name": "http://127.0.0.1:8080/stickman/api/v1/users/modifyName"
+  },
+  {
+   "mine_content": "矿山相关数据：个人，刷新，开采，奖励，解锁，保护，可抢信息，历史数据，结果，防守",
+   "url_mine_own": "http://127.0.0.1:8080/stickman/api/v1/mine?type=0",
+   "url_mine_refreshcoin": "http://127.0.0.1:8080/stickman/api/v1/mine?type=1&position=%d",
+   "url_mine_refreshdiamond": "http://127.0.0.1:8080/stickman/api/v1/mine?type=2&position=%d",
+   "url_mine_recover": "http://127.0.0.1:8080/stickman/api/v1/mine",
+   "url_mine_reward": "http://127.0.0.1:8080/stickman/api/v1/mine",
+   "url_mine_position": "http://127.0.0.1:8080/stickman/api/v1/mine/openPosition",
+   "url_mine_protect": "http://127.0.0.1:8080/stickman/api/v1/mine/protectMine",
+   "url_mine_snatch": "http://127.0.0.1:8080/stickman/api/v1/mine?type=3",
+   "url_mine_history": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo/%s",
+   "url_mine_result": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo",
+   "url_mine_defense": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo/getDefenseInfo",
+   "url_mine_buy": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo"
+  },
+  {
+   "inviteCode_content": "邀请相关数据",
+   "url_invite_code_get": "http://127.0.0.1:8080/stickman/api/v1/invitationCode/",
+   "url_invite_code_reward": "http://127.0.0.1:8080/stickman/api/v1/invitationCode",
+   "url_invite_code_fillcode": "http://127.0.0.1:8080/stickman/api/v1/invitationCode"
+  },
+  {
+   "festival_content": "节日相关数据",
+   "url_festival_get": "http://127.0.0.1:8080/stickman/api/v1/Festival/getFestivalInfo",
+   "url_festival_reward": "http://127.0.0.1:8080/stickman/api/v1/festival",
+   "url_festival_reward_new": "http://127.0.0.1:8080/stickman/api/v1/festival/modifyFestivalNew",
+   "url_festival_new": "http://127.0.0.1:8080/stickman/api/v1/festival/getFestivalNewInfo"
+  },
+  {
+   "signed_content": "累计签到",
+   "url_signed_get": "http://127.0.0.1:8080/stickman/api/v1/signIn/%s",
+   "url_signed_put": "http://127.0.0.1:8080/stickman/api/v1/signIn"
+  },
+  {
+   "vip_content": "vip相关数据",
+   "url_vip_is": "http://127.0.0.1:8080/stickman/api/v1/vip/getVipInfo?game=%s&id=%s",
+   "url_vip_buy": "http://127.0.0.1:8080/stickman/api/v1/vip",
+   "url_vip_get": "http://127.0.0.1:8080/stickman/api/v1/vip"
+  },
+  {
+   "campaign_content": "活动相关数据",
+   "url_campaign_get": "http://127.0.0.1:8080/stickman/api/v1/event/getEvents?channel=%s&version=%d",
+   "url_campaign_question": "http://127.0.0.1:8080/stickmanb/app/survey.html?uid=%s&channel=%s",
+   "url_campaign_put": "http://127.0.0.1:8080/stickman/api/v1/event"
+  },
+  {
+   "gemdraw_content": "抽宝箱数据",
+   "url_gemdraw_get": "http://127.0.0.1:8080/stickman/api/v1/lotteryDraw/getItems?type=%d",
+   "url_gemdraw_put": "http://127.0.0.1:8080/stickman/api/v1/lotteryDraw"
+  },
+  {
+   "circusshop_content": "竞技商店相关数据",
+   "url_circusshop_get": "http://127.0.0.1:8080/stickman/api/v1/product",
+   "url_circusshop_put": "http://127.0.0.1:8080/stickman/api/v1/product"
+  },
+  {
+   "talentdraw_content": "天赋抽奖数据",
+   "url_talentdraw_get": "http://127.0.0.1:8080/stickman/api/v1/skillchip/getConf?id=%d"
+  },
+  {
+   "exchange_content": "兑换相关数据",
+   "url_exchange_main": "http://127.0.0.1:8080/stickman/api/v1/cdkeyReward"
+  },
+  {
+   "campaign_content": "更新公告信息",
+   "url_updatepublish": "http://127.0.0.1:8080/stickman/api/v1/board/id=%s?channel=%s&version=%s"
+  },
+  {
+   "campaign_channel_content": "阿里云是否显示",
+   "url_campaign_channel_get": "http://127.0.0.1:8080/stickman/api/v1/event/getEventSwitch?channel=%s"
+  },
+  {
+   "desc": "拉取玩家排位赛信息",
+   "pk_user_info": "http://127.0.0.1/stickman/api/v1/userRank/%s"
+  },
+  {
+   "desc": "修改玩家PK阵容",
+   "pk_change_heros": "http://127.0.0.1/stickman/api/v1/userRank"
+  },
+  {
+   "desc": "使用钻石减少冷却时间",
+   "pk_reduce_cd": "http://127.0.0.1/stickman/api/v1/userRank/modifyCdTime"
+  },
+  {
+   "desc": "领取排位赛奖励",
+   "pk_draw_rewards": "http://127.0.0.1/stickman/api/v1/rankMatchReward"
+  },
+  {
+   "desc": "查看排位赛前100排名",
+   "pk_get_rank": "http://127.0.0.1/stickman/api/v1/userRank/getRankList?weeks=0&page=0&number=100"
+  },
+  {
+   "gatestatus_content": "入口总数据 其他数据以后整理",
+   "url_gate_status": "http://127.0.0.1:8080/stickman/api/v1/status/%s"
+  },
+  {
+   "getonsales": "获取特惠商城所有物品",
+   "url_get_onsales": "http://127.0.0.1:8080/stickman/api/v1/priceCutting"
+  },
+  {
+   "practicedesc": "修炼数据",
+   "url_get_pracinfo": "http://127.0.0.1:8080/stickman/api/v1/getPractice"
+  },
+  {
+   "buyonsale": "购买特惠商城物品",
+   "url_buy_onsale": "http://127.0.0.1:8080/stickman/api/v1/priceCutting"
+  },
+  {
+   "desc": "抢红包",
+   "url_get_redpack": "http://127.0.0.1:8080/stickman/api/v1/userBonus/getBonusInfo",
+   "url_put_redpack": "http://127.0.0.1:8080/stickman/api/v1/userBonus"
+  },
+  {
+   "desc": "幸运商城",
+   "url_Luckshop_get": "http://127.0.0.1:8080/stickman/api/v1/bonusAward",
+   "url_Luckshop_put": "http://127.0.0.1:8080/stickman/api/v1/bonusAward"
+  },
+  {
+   "desc": "联想广告后台配置数据",
+   "url_ad_values": "http://127.0.0.1:8080/stickman/api/v1/ads/getHealthyAds"
+  },
+  {
+   "desc": "开节日宝箱",
+   "url_chestfestival_get": "http://127.0.0.1:8080/stickman/api/v1/itemBox?typeId=%d&number=%d"
+  },
+  {
+   "desc": "月卡",
+   "url_card_get": "http://127.0.0.1:8080/stickman/api/v1/monthVip/%s",
+   "url_card_put": "http://127.0.0.1:8080/stickman/api/v1/monthVip"
+  },
+  {
+   "desc": "关联设备",
+   "url_glsb_get": "http://127.0.0.1:8080/stickman/api/v1/devicedata/getDeviceId",
+   "url_glsb_post": "http://127.0.0.1:8080/stickman/api/v1/deviceData"
+  },
+  {
+   "desc": "宝藏数据",
+   "url_treasure_get": "http://127.0.0.1:8080/stickman/api/v1/treasure/%s",
+   "url_treasure_put": "http://127.0.0.1:8080/stickman/api/v1/treasure"
+  },
+  {
+   "desc": "计费点数据",
+   "url_giftswitch_get": "http://127.0.0.1:8080/stickman/api/v1/giftSwitch/%s?%s"
+  },
+  {
+   "desc": "活跃度获取服务器时间",
+   "url_liveness_gettime": "http://127.0.0.1:8080/stickman/api/v1/getServerTime"
+  },
+  {
+   "desc": "幸运转盘抽奖",
+   "url_luckydraw": "http://127.0.0.1:8080/stickman/api/v1/luckDraw"
+  },
+  {
+   "desc": "幸运转盘数据",
+   "url_luckydraw_getinfo": "http://127.0.0.1:8080/stickman/api/v1/luckDraw/getInfo"
+  },
+  {
+   "desc": "QQ币领取数据",
+   "url_qqcoin": "http://127.0.0.1:8080/stickman/api/v1/status/%s",
+   "url_getqqcoin": "http://127.0.0.1:8080/stickman/api/v1/event/uploadData"
+  },
+  {
+   "desc": "联通包月礼包",
+   "url_monthly_gettime": "http://127.0.0.1:8080/stickman/api/v1/month/getMonthInfo",
+   "url_monthly_savetime": "http://127.0.0.1:8080/stickman/api/v1/month",
+   "url_monthly_sendgettime": "http://127.0.0.1:8080/stickman/api/v1/month/receiveReward"
+  },
+  {
+   "desc": "镜像挑战数据",
+   "url_mirror_get": "http://127.0.0.1:8080/stickman/api/v1/mirror/getMirrorChallInfo",
+   "url_mirror_check": "http://127.0.0.1:8080/stickman/api/v1/mirror/beginChall",
+   "url_mirror_use": "http://127.0.0.1:8080/stickman/api/v1/mirror/saveChallNum",
+   "url_mirror_buy": "http://127.0.0.1:8080/stickman/api/v1/mirror/saveBuyChallNum"
+  },
+  {
+   "desc": "限时英雄礼包",
+   "url_timelimitedhero_info": "http://127.0.0.1:8080/stickman/api/v1/heroGift/getHeroGiftNewInfo"
+  },
+  {
+   "desc": "4399签到活动",
+   "url_pack4399_info": "http://127.0.0.1:8080/stickman/api/v1/item4399/getItem4399Info"
+  },
+  {
+   "desc": "熔炉兑换道具列表",
+   "url_furnace_exchange_list": "http://127.0.0.1:8080/stickman/api/v1/exchange/getUserExchange",
+   "url_furnace_refresh_list": "http://127.0.0.1:8080/stickman/api/v1/exchange/getFlushInfo?diamond=%d&coin=%d"
+  },
+  {
+   "desc": "巨龙峡谷数据",
+   "url_vallery_get": "http://127.0.0.1:8080/stickman/api/v1/dragon/getDragonChallInfo",
+   "url_vallery_challenge": "http://127.0.0.1:8080/stickman/api/v1/dragon/beginDragonChall",
+   "url_vallery_save": "http://127.0.0.1:8080/stickman/api/v1/dragon/saveDragonChallNum",
+   "url_vallery_buy": "http://127.0.0.1:8080/stickman/api/v1/dragon/saveDragonBuyChallNum"
+  },
+  {
+   "desc": "宠物数据",
+   "url_pet_skill_wash": "http://127.0.0.1:8080/stickman/api/v1/petTraining/getSkillsInfo?petType=2700",
+   "url_pet_train_get": "http://127.0.0.1:8080/stickman/api/v1/petTraining/getPetTrainingInfo",
+   "url_pet_train_put": "http://127.0.0.1:8080/stickman/api/v1/petTraining"
+  },
+  {
+   "desc": "挑战赛数据",
+   "url_challenge_startchallenge": "http://127.0.0.1:8080/stickman/api/v1/userChall/getMatchInfo?lineup=%s",
+   "url_challenge_result": "http://127.0.0.1:8080/stickman/api/v1/userChall/modifyWinOrLoseNum",
+   "url_challenge_user_get": "http://127.0.0.1:8080/stickman/api/v1/userChallenge/",
+   "url_challenge_begin_post": "http://127.0.0.1:8080/stickman/api/v1/userChall/modifyIsBeginStatus",
+   "url_challenge_users_roll_get": "http://127.0.0.1:8080/stickman/api/v1/userChall/getUsersRoll"
+  },
+  {
+   "desc": "获得战车主界面信息",
+   "url_getChariotInfo": "http://127.0.0.1:8080/stickman/api/v1/chariot/getChariotInfo",
+   "url_getChexploreChariot": "http://127.0.0.1:8080/stickman/api/v1/chariot/exploreChariot?score=%d",
+   "url_chariotFight": "http://127.0.0.1:8080/stickman/api/v1/chariot/chariotFight?score=%d"
+  },
+  {
+   "desc": "英雄祭坛",
+   "url_getHeroDrawInfo": "http://127.0.0.1:8080/stickman/api/v1/heroDraw/getHeroDrawInfo"
+  }
+ ],
+ "web_url": [
+  {
+   "sign_content": "登录相关数据",
+   "url_dailysign_curtime": "http://127.0.0.1:8080/stickman/api/v1/loginReward/getLoginRewardInfo",
+   "url_dailysign_getreward": "http://127.0.0.1:8080/stickman/api/v1/loginReward"
+  },
+  {
+   "ad_content": "广告相关链接",
+   "url_ad_getDate": "http://127.0.0.1:8080/stickman/api/v1/ads/getAdsUserInfo",
+   "url_ad_saveDate": "http://127.0.0.1:8080/stickman/api/v1/ads/saveAdsItemsRewards"
+  },
+  {
+   "fankui_content": "反馈相关数据",
+   "url_fankui_count": "http://127.0.0.1:8080/index.php?action=FeedBack.notify&game=%s&id=%s",
+   "url_fankui_view1": "http://127.0.0.1:8080/",
+   "url_fankui_view2": "http://127.0.0.1:8080/stickmanb/app/customer.html?uid=%s&appkey=%s&ch=%s&andver=%d"
+  },
+  {
+   "login_content": "登陆，注册，获取注册信息相关数据",
+   "url_user_login": "http://127.0.0.1:8080/stickman/api/v1/account/login",
+   "url_user_zhuce": "http://127.0.0.1:8080/stickman/api/v1/account",
+   "url_user_findpassword": "http://127.0.0.1:8080/stickman/api/v1/account/getRegisterInfo",
+   "url_user_zhucexinxi": "http://127.0.0.1:8080/stickman/api/v1/account/getRegisterInfo?version=%s&channel=%s"
+  },
+  {
+   "notice_content": "公告相关数据",
+   "url_user_notice": "http://127.0.0.1:8080/stickman/api/v1/bulletin/%s?version=%s&channel=%s"
+  },
+  {
+   "notice_content": "战车相关数据",
+   "url_user_car": "http://127.0.0.1:8080/stickman/api/v1/chariot/getUserChariot",
+   "url_user_car_buyNum": "http://127.0.0.1:8080/stickman/api/v1/chariot/buyChariotNum",
+   "url_user_save_car": "http://127.0.0.1:8080/stickman/api/v1/chariot/saveUserChariot",
+   "url_user_get_user_data": "http://127.0.0.1:8080/stickman/api/v1/chariot/getChariotIsUnLocked",
+   "url_user_save_user_data": "http://127.0.0.1:8080/stickman/api/v1/chariot/saveChariotIsUnLocked"
+  },
+  {
+   "notice_content": "英雄招募相关数据",
+   "url_zhaomu_get_reward_data": "http://127.0.0.1:8080/stickman/api/v1/heroDraw"
+  },
+  {
+   "data_content": "游戏数据相关数据",
+   "url_data_save": "http://127.0.0.1:8080/stickman/api/v1/account/saveGameData?version=%s&channel=%s&fightCapacity=%d",
+   "url_data_check": "http://127.0.0.1:8080/stickman/api/v1/account/isSaveGameData?fightCapacity=%d",
+   "url_data_get": "http://127.0.0.1:8080/stickman/api/v1/account/getGameData",
+   "url_data_getdownloadnum": "http://127.0.0.1:8080/stickman/api/v1/account/getDownloadNum",
+   "url_data_updatedownloadnum": "http://127.0.0.1:8080/stickman/api/v1/account/updateDownloadNum"
+  },
+  {
+   "circus_content": "擂台赛相关数据：总表，个人，敌人，pvp，英雄，修改属性，上传结果，下载排行，上传领取奖励，排行刷新时间，下载zip，上传zip，修改name",
+   "url_circus_challenge": "http://127.0.0.1:8080/stickman/api/v1/users/%s/contests",
+   "url_circus_owner": "http://127.0.0.1:8080/stickman/api/v1/users/%s",
+   "url_circus_opponent": "http://127.0.0.1:8080/stickman/api/v1/opponent/%s",
+   "url_circus_pvprecode": "http://127.0.0.1:8080/stickman/api/v1/users/%s/records",
+   "url_circus_herorecode": "http://127.0.0.1:8080/stickman/api/v1/opponents?count=100&sort=rank",
+   "url_circus_modify": "http://127.0.0.1:8080/stickman/api/v1/users",
+   "url_circus_revenge": "http://127.0.0.1:8080/stickman/api/v1/users/%s/records",
+   "url_circus_downranking": "http://127.0.0.1:8080/stickman/api/v1/rankReward/%s",
+   "url_circus_upranking": "http://127.0.0.1:8080/stickman/api/v1/rankReward",
+   "url_circus_rankingtime": "http://127.0.0.1:8080/stickman/api/v1/getServerTime",
+   "url_circus_downzip": "http://127.0.0.1:8080/stickman/api/v1/records/getRecordVideo?record_id=%s",
+   "url_circus_upzip": "http://127.0.0.1:8080/stickman/api/v1/records/saveReocrdVideo?record_id=%s",
+   "url_circus_name": "http://127.0.0.1:8080/stickman/api/v1/users/modifyName"
+  },
+  {
+   "mine_content": "矿山相关数据：个人，刷新，开采，奖励，解锁，保护，可抢信息，历史数据，结果，防守",
+   "url_mine_own": "http://127.0.0.1:8080/stickman/api/v1/mine?type=0",
+   "url_mine_refreshcoin": "http://127.0.0.1:8080/stickman/api/v1/mine?type=1&position=%d",
+   "url_mine_refreshdiamond": "http://127.0.0.1:8080/stickman/api/v1/mine?type=2&position=%d",
+   "url_mine_recover": "http://127.0.0.1:8080/stickman/api/v1/mine",
+   "url_mine_reward": "http://127.0.0.1:8080/stickman/api/v1/mine",
+   "url_mine_position": "http://127.0.0.1:8080/stickman/api/v1/mine/openPosition",
+   "url_mine_protect": "http://127.0.0.1:8080/stickman/api/v1/mine/protectMine",
+   "url_mine_snatch": "http://127.0.0.1:8080/stickman/api/v1/mine?type=3",
+   "url_mine_history": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo/%s",
+   "url_mine_result": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo",
+   "url_mine_defense": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo/getDefenseInfo",
+   "url_mine_buy": "http://127.0.0.1:8080/stickman/api/v1/mineRobInfo"
+  },
+  {
+   "inviteCode_content": "邀请相关数据",
+   "url_invite_code_get": "http://127.0.0.1:8080/stickman/api/v1/invitationCode/",
+   "url_invite_code_reward": "http://127.0.0.1:8080/stickman/api/v1/invitationCode",
+   "url_invite_code_fillcode": "http://127.0.0.1:8080/stickman/api/v1/invitationCode"
+  },
+  {
+   "festival_content": "节日相关数据",
+   "url_festival_get": "http://127.0.0.1:8080/stickman/api/v1/Festival/getFestivalInfo",
+   "url_festival_reward": "http://127.0.0.1:8080/stickman/api/v1/festival",
+   "url_festival_reward_new": "http://127.0.0.1:8080/stickman/api/v1/festival/modifyFestivalNew",
+   "url_festival_new": "http://127.0.0.1:8080/stickman/api/v1/festival/getFestivalNewInfo"
+  },
+  {
+   "signed_content": "累计签到",
+   "url_signed_get": "http://127.0.0.1:8080/stickman/api/v1/signIn/%s",
+   "url_signed_put": "http://127.0.0.1:8080/stickman/api/v1/signIn"
+  },
+  {
+   "vip_content": "vip相关数据",
+   "url_vip_is": "http://127.0.0.1:8080/stickman/api/v1/vip/getVipInfo?game=%s&id=%s",
+   "url_vip_buy": "http://127.0.0.1:8080/stickman/api/v1/vip",
+   "url_vip_get": "http://127.0.0.1:8080/stickman/api/v1/vip"
+  },
+  {
+   "gemdraw_content": "抽宝箱数据",
+   "url_gemdraw_get": "http://127.0.0.1:8080/stickman/api/v1/lotteryDraw/getItems?type=%d",
+   "url_gemdraw_put": "http://127.0.0.1:8080/stickman/api/v1/lotteryDraw"
+  },
+  {
+   "campaign_content": "活动相关数据",
+   "url_campaign_get": "http://127.0.0.1:8080/stickman/api/v1/event/getEvents?channel=%s&version=%d",
+   "url_campaign_question": "http://127.0.0.1:8080/stickmanb/app/survey.html?uid=%s&channel=%s",
+   "url_campaign_put": "http://127.0.0.1:8080/stickman/api/v1/event"
+  },
+  {
+   "circusshop_content": "竞技商店相关数据",
+   "url_circusshop_get": "http://127.0.0.1:8080/stickman/api/v1/product",
+   "url_circusshop_put": "http://127.0.0.1:8080/stickman/api/v1/product"
+  },
+  {
+   "talentdraw_content": "天赋抽奖数据",
+   "url_talentdraw_get": "http://127.0.0.1:8080/stickman/api/v1/skillchip/getConf?id=%d"
+  },
+  {
+   "exchange_content": "兑换相关数据",
+   "url_exchange_main": "http://127.0.0.1:8080/stickman/api/v1/cdkeyReward"
+  },
+  {
+   "campaign_content": "更新公告信息",
+   "url_updatepublish": "http://127.0.0.1:8080/stickman/api/v1/board/id=%s?channel=%s&version=%s"
+  },
+  {
+   "campaign_channel_content": "阿里云是否显示",
+   "url_campaign_channel_get": "http://127.0.0.1:8080/stickman/api/v1/event/getEventSwitch?channel=%s"
+  },
+  {
+   "desc": "拉取玩家排位赛信息",
+   "pk_user_info": "http://127.0.0.1/stickman/api/v1/userRank/%s"
+  },
+  {
+   "desc": "修改玩家PK阵容",
+   "pk_change_heros": "http://127.0.0.1/stickman/api/v1/userRank"
+  },
+  {
+   "desc": "使用钻石减少冷却时间",
+   "pk_reduce_cd": "http://127.0.0.1/stickman/api/v1/userRank/modifyCdTime"
+  },
+  {
+   "desc": "领取排位赛奖励",
+   "pk_draw_rewards": "http://127.0.0.1/stickman/api/v1/rankMatchReward"
+  },
+  {
+   "desc": "查看排位赛前100排名",
+   "pk_get_rank": "http://127.0.0.1/stickman/api/v1/userRank/getRankList?weeks=0&page=0&number=100"
+  },
+  {
+   "gatestatus_content": "入口总数据 其他数据以后整理",
+   "url_gate_status": "http://127.0.0.1:8080/stickman/api/v1/status/%s"
+  },
+  {
+   "getonsales": "获取特惠商城所有物品",
+   "url_get_onsales": "http://127.0.0.1:8080/stickman/api/v1/priceCutting"
+  },
+  {
+   "practicedesc": "修炼数据",
+   "url_get_pracinfo": "http://127.0.0.1:8080/stickman/api/v1/getPractice"
+  },
+  {
+   "buyonsale": "购买特惠商城物品",
+   "url_buy_onsale": "http://127.0.0.1:8080/stickman/api/v1/priceCutting"
+  },
+  {
+   "desc": "抢红包",
+   "url_get_redpack": "http://127.0.0.1:8080/stickman/api/v1/userBonus/getBonusInfo",
+   "url_put_redpack": "http://127.0.0.1:8080/stickman/api/v1/userBonus"
+  },
+  {
+   "desc": "幸运商城",
+   "url_Luckshop_get": "http://127.0.0.1:8080/stickman/api/v1/bonusAward",
+   "url_Luckshop_put": "http://127.0.0.1:8080/stickman/api/v1/bonusAward"
+  },
+  {
+   "desc": "联想广告后台配置数据",
+   "url_ad_values": "http://127.0.0.1:8080/stickman/api/v1/ads/getHealthyAds"
+  },
+  {
+   "desc": "开节日宝箱",
+   "url_chestfestival_get": "http://127.0.0.1:8080/stickman/api/v1/itemBox?typeId=%d&number=%d"
+  },
+  {
+   "desc": "月卡",
+   "url_card_get": "http://127.0.0.1:8080/stickman/api/v1/monthVip/%s",
+   "url_card_put": "http://127.0.0.1:8080/stickman/api/v1/monthVip"
+  },
+  {
+   "desc": "关联设备",
+   "url_glsb_get": "http://127.0.0.1:8080/stickman/api/v1/devicedata/getDeviceId",
+   "url_glsb_post": "http://127.0.0.1:8080/stickman/api/v1/deviceData"
+  },
+  {
+   "desc": "宝藏数据",
+   "url_treasure_get": "http://127.0.0.1:8080/stickman/api/v1/treasure/%s",
+   "url_treasure_put": "http://127.0.0.1:8080/stickman/api/v1/treasure"
+  },
+  {
+   "desc": "计费点数据",
+   "url_giftswitch_get": "http://127.0.0.1:8080/stickman/api/v1/giftSwitch/%s?%s"
+  },
+  {
+   "desc": "活跃度获取服务器时间",
+   "url_liveness_gettime": "http://127.0.0.1:8080/stickman/api/v1/getServerTime"
+  },
+  {
+   "desc": "幸运转盘抽奖",
+   "url_luckydraw": "http://127.0.0.1:8080/stickman/api/v1/luckDraw"
+  },
+  {
+   "desc": "幸运转盘数据",
+   "url_luckydraw_getinfo": "http://127.0.0.1:8080/stickman/api/v1/luckDraw/getInfo"
+  },
+  {
+   "desc": "QQ币领取数据",
+   "url_qqcoin": "http://127.0.0.1:8080/stickman/api/v1/status/%s",
+   "url_getqqcoin": "http://127.0.0.1:8080/stickman/api/v1/event/uploadData"
+  },
+  {
+   "desc": "联通包月礼包",
+   "url_monthly_gettime": "http://127.0.0.1:8080/stickman/api/v1/month/getMonthInfo",
+   "url_monthly_savetime": "http://127.0.0.1:8080/stickman/api/v1/month",
+   "url_monthly_sendgettime": "http://127.0.0.1:8080/stickman/api/v1/month/receiveReward"
+  },
+  {
+   "desc": "镜像挑战数据",
+   "url_mirror_get": "http://127.0.0.1:8080/stickman/api/v1/mirror/getMirrorChallInfo",
+   "url_mirror_check": "http://127.0.0.1:8080/stickman/api/v1/mirror/beginChall",
+   "url_mirror_use": "http://127.0.0.1:8080/stickman/api/v1/mirror/saveChallNum",
+   "url_mirror_buy": "http://127.0.0.1:8080/stickman/api/v1/mirror/saveBuyChallNum"
+  },
+  {
+   "desc": "限时英雄礼包",
+   "url_timelimitedhero_info": "http://127.0.0.1:8080/stickman/api/v1/heroGift/getHeroGiftNewInfo"
+  },
+  {
+   "desc": "4399签到活动",
+   "url_pack4399_info": "http://127.0.0.1:8080/stickman/api/v1/item4399/getItem4399Info"
+  },
+  {
+   "desc": "熔炉兑换道具列表",
+   "url_furnace_exchange_list": "http://127.0.0.1:8080/stickman/api/v1/exchange/getUserExchange",
+   "url_furnace_refresh_list": "http://127.0.0.1:8080/stickman/api/v1/exchange/getFlushInfo?diamond=%d&coin=%d"
+  },
+  {
+   "desc": "巨龙峡谷数据",
+   "url_vallery_get": "http://127.0.0.1:8080/stickman/api/v1/dragon/getDragonChallInfo",
+   "url_vallery_challenge": "http://127.0.0.1:8080/stickman/api/v1/dragon/beginDragonChall",
+   "url_vallery_save": "http://127.0.0.1:8080/stickman/api/v1/dragon/saveDragonChallNum",
+   "url_vallery_buy": "http://127.0.0.1:8080/stickman/api/v1/dragon/saveDragonBuyChallNum"
+  },
+  {
+   "desc": "宠物数据",
+   "url_pet_skill_wash": "http://127.0.0.1:8080/stickman/api/v1/petTraining/getSkillsInfo?petType=2700",
+   "url_pet_train_get": "http://127.0.0.1:8080/stickman/api/v1/petTraining/getPetTrainingInfo",
+   "url_pet_train_put": "http://127.0.0.1:8080/stickman/api/v1/petTraining"
+  },
+  {
+   "desc": "挑战赛数据",
+   "url_challenge_startchallenge": "http://127.0.0.1:8080/stickman/api/v1/userChall/getMatchInfo?lineup=%s",
+   "url_challenge_result": "http://127.0.0.1:8080/stickman/api/v1/userChall/modifyWinOrLoseNum",
+   "url_challenge_user_get": "http://127.0.0.1:8080/stickman/api/v1/userChallenge/",
+   "url_challenge_begin_post": "http://127.0.0.1:8080/stickman/api/v1/userChall/modifyIsBeginStatus",
+   "url_challenge_users_roll_get": "http://127.0.0.1:8080/stickman/api/v1/userChall/getUsersRoll"
+  },
+  {
+   "desc": "获得战车主界面信息",
+   "url_getChariotInfo": "http://127.0.0.1:8080/stickman/api/v1/chariot/getChariotInfo",
+   "url_getChexploreChariot": "http://127.0.0.1:8080/stickman/api/v1/chariot/exploreChariot?score=%d",
+   "url_chariotFight": "http://127.0.0.1:8080/stickman/api/v1/chariot/chariotFight?score=%d"
+  },
+  {
+   "desc": "英雄祭坛",
+   "url_getHeroDrawInfo": "http://127.0.0.1:8080/stickman/api/v1/heroDraw/getHeroDrawInfo"
+  }
+ ]
+}

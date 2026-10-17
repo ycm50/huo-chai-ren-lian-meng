@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:installLocation="auto">
+    <uses-feature android:glEsVersion="0x00020000" />
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.bz.simplesdk.realname.FakeApp" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.DBGame.DiabloLOL.DiabloLOL" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="false" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.DBGame.DiabloLOL.LoadingActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="false" />
+        <activity android:label="@string/app_name" android:name="com.DBGame.DiabloLOL.SplashActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.DBGame.DiabloLOL.WebActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="false" />
+        <activity android:label="@string/app_name" android:name="com.example.bluetoothdemo.activity.DiviceListActivity" android:exported="false" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.cmgame.billing.api.GameOpenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+                <category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="cn.cmgame2_0.launch_model.shortcut.main.MiguHomeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.cmgame2_0.category.migu_home" />
+            </intent-filter>
+        </activity>
+        <service android:name="cn.cmgame.billing.service.GameService" android:exported="false" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.egame.terminal.paysdk.EgamePayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:exported="false" />
+        <receiver android:name="cn.egame.terminal.sdk.EgameCoreReceiver" android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.RECEIVER_CMD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="cn.egame.terminal.sdk.EgameCoreService" android:process=":egameCore" android:exported="true">
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.SERVICE_CMD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.egame.terminal.sdk.EgameCoreActivity" android:process=":egameCore" android:screenOrientation="landscape" android:taskAffinity=":egameCore" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <service android:name="cn.play.egamemanager.UpdateService" android:process=":eGameMgr" android:exported="false" />
+        <activity android:name="cn.play.egamemanager.OperateActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="EGAME_SDK_DEBUG" android:value="true" />
+        <meta-data android:name="EGAME_GAMEID" android:value="5120754" />
+        <meta-data android:name="EGAME_ALIPAY" android:value="false" />
+        <meta-data android:name="EGAME_IAPPPAY" android:value="false" />
+        <meta-data android:name="EGAME_NOWWECHATPAY" android:value="false" />
+        <meta-data android:name="wostore_billing_chinaunicom" android:value="true" />
+        <meta-data android:name="wostore_billing_chinamobile" android:value="false" />
+        <meta-data android:name="wostore_billing_chinatele" android:value="false" />
+        <receiver android:name="com.unicom.xiaowo.SecurityReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.unicom.xiaowo.security.RECEIVER_CMD" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework" android:exported="false" />
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.unicom.wostore.unipay.paysecurity.SecurityActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.unicom.wostore.unipay.paysecurity.PayActivity" />
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" />
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind" />
+        <meta-data android:name="cpId" android:value="cpid:86015168" />
+        <meta-data android:name="AppId" android:value="appid:9024178817020150324180311119100" />
+        <meta-data android:name="UNICOM_SDK_VERSION" android:value="2.0.1" />
+        <meta-data android:name="wostore_billing_otherpay" android:value="false" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="um_360" />
+        <meta-data android:name="EGAME_CHANNEL" android:value="80011046" />
+        <meta-data android:name="EMChannel" android:value="a10022" />
+        <meta-data android:name="fidsms" android:value="fidsms:18594" />
+        <meta-data android:name="appKey" android:value="3AooNepowFYqscHpDu0DfouzXs9ilTw" />
+        <meta-data android:name="debug" android:value="false" />
+        <meta-data android:name="SOHU_APP_ID" android:value="3AooNepowFYqscHpDu0DfouzXs9ilTw" />
+        <meta-data android:name="SOHU_CHANNEL_CODE" android:value="YW600001" />
+        <meta-data android:name="SOHU_SDK_VERSION" android:value="2.2.3" />
+        <activity android:configChanges="fontScale|keyboardHidden|layoutDirection|locale|navigation|orientation|screenSize|uiMode" android:exported="true" android:name="com.qihoo.gamecenter.sdk.activity.ContainerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="com.DBGame.DiabloLOL" />
+                <data android:scheme="qihooonlinepay" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenSize|uiMode" android:name="com.qihoopp.qcoinpay.QcoinActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" android:exported="false" />
+        <activity android:configChanges="keyboard|layoutDirection|navigation|orientation|screenSize" android:name="com.iapppay.alpha.sdk.main.WebActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenLayout|smallestScreenSize" android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent" android:exported="false" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.heepay.plugin.activity.HyNotityActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+        <activity android:configChanges="fontScale|keyboardHidden|layoutDirection|locale|navigation|orientation|screenSize|uiMode" android:label="360SDK" android:name="com.qihoo.sdkplugging.host.activity.HostProxyActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan" android:exported="true">
+            <intent-filter>
+                <action android:name="com.qihoo.sdkplugging.host.proxy.activity.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="QHOPENSDK_APPKEY" android:value="18b76dacfb12a2d3fb8e656c684d5b8b" />
+        <meta-data android:name="QHOPENSDK_PRIVATEKEY" android:value="a1f1657448be381cb9a7c7c37df1b7e5" />
+        <meta-data android:name="QHOPENSDK_APPID" android:value="202409901" />
+        <activity android:exported="true" android:label="@string/app_name" android:name=".wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <meta-data android:name="QHOPENSDK_WEIXIN_APPID" android:value="wx02faa6a503e262e5" />
+        <service android:name="com.qihoo.sdkplugging.host.service.CommonHostProxyService" android:persistent="true" android:process=":gcpasremote" android:exported="true">
+            <intent-filter>
+                <action android:name="com.qihoo.sdkplugging.host.service.CommonHostProxyService" />
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:launchMode="singleTask" android:name="com.qihoo.gamecenter.sdk.hook.DownloadService" />
+        <meta-data android:name="DC_APPKEY" android:value="02522a2b2726fb0a03bb19f2d8d9524d" />
+        <activity android:name="com.qihoo.gamecenter.sdk.activity.QhDeepLinkActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="18b76dacfb12a2d3fb8e656c684d5b8b" android:pathPrefix="/opengames" android:scheme="qihoosdkgame" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="original_as" android:value="com.DBGame.DiabloLOL.SplashActivity" />
+        <meta-data android:name="es_bz" android:value="z_v.bin" />
+        <activity android:exported="true" android:name="com.bz.simplesdk.realname.RealNameActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bz.simplesdk.realname.GameActivity" android:exported="false" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.game.realname.sdk.ui.RealNameWebActivity" android:screenOrientation="behind" android:theme="@style/RnsdkFloatDialogTheme" android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <service android:exported="false" android:name="com.game.realname.sdk.RealNameSDKService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.game.realname.sdk.RealNameSDKService" />
+            </intent-filter>
+        </service>
+        <!-- The distributed APK redirected this to com.cx.again.MainActivity, which only
+             pushes the 7723 game store (com.upgadata.up7723) and never starts the game.
+             original_as records the game's own entry point; restored here. -->
+        <meta-data android:name="realnamenextactivity" android:value="com.DBGame.DiabloLOL.SplashActivity"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="dianxin.permission.ACCESS_LAUNCHER_DATA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINAL_LOCATION" />
+    <uses-permission android:name="android.permission.BIND_JOB_SERVICE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature" />
+    <!-- 原 APK 声明了 key-set A/B 作为 upgrade-key-set，但本项目用 test.keystore 重新签名，
+         与这些密钥集不匹配会导致 pm install -r 报 INSTALL_FAILED_UPDATE_INCOMPATIBLE。
+         移除后升级校验改为按签名证书比对（同一把 keystore 即可覆盖安装）。 -->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+</manifest>

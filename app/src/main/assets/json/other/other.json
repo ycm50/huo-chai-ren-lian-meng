@@ -1,0 +1,8 @@
+[
+    {
+         "fightaddbuff_content":"战斗buff上限数据",
+         "attack_upper": "150",
+         "defense_upper": "150",
+         "life_upper": "150"
+    }
+]	

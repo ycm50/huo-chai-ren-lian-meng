@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.DBGame.DiabloLOL'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.DBGame.DiabloLOL"
+        minSdk 21
+        // targetSdk 30 (Android 11)。
+        //
+        // 升级前这里是 24，两条顾虑现在都不成立了：
+        //   1) 分区存储(scoped storage)：过去担心 patch 读不到 /sdcard/dsh_*.txt。
+        //      现在配置目录已改到【应用私有目录】/data/data/<pkg>/files/，
+        //      属于 internal storage，完全不受分区存储影响 ✓
+        //   2) writable dex：libmegjb.so 会把 dex 释放到 <dataDir>/<pid>.dex 再用
+        //      DexClassLoader 加载，targetSdk>=29 时 ART 会拒绝（"Writable dex file
+        //      is not allowed"）。本工程是 debuggable 构建，ART 对该检查对
+        //      debuggable 应用放行，实测可正常运行 ✓（见 PROGRESS R402）
+        //
+        // 仍需保持 targetSdk >= 24：Android 14+ 拒绝全新安装 targetSdk < 24
+        // (INSTALL_FAILED_DEPRECATED_SDK_VERSION)。
+        targetSdk 30
+        versionCode 1
+        versionName "1.18.1"
+
+        // NDK r26.1.10909125 has no legacy 'armeabi' (ARMv5) target any more, so the
+        // whole app is packaged as armeabi-v7a. The prebuilt third-party SDK .so
+        // files (originally under jniLibs/armeabi) have been moved to
+        // jniLibs/armeabi-v7a so they keep being packaged; ARMv5 code runs unchanged
+        // on ARMv7.
+        ndkVersion '26.1.10909125'
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    // ========================================================================
+    // 原生库策略：混合 (hybrid) 方案 —— 本项目刻意【不】从源码构建
+    // libcocos2dcpp.so，而是把原版 11.8 MB 的 libcocos2dcpp.so 原样打包。
+    //
+    // 理由：原版 .so 内部调用几乎全是 PC 相对直接绑定，先加载哪个库都无法
+    // 通过符号插桩劫持它（已实测）。因此自定义逻辑只能以内联 Hook 的方式
+    // 叠加，而叠加的载体是独立构建的 libpatch.so（见 src/main/cpp/patch/）。
+    //
+    // src/main/cpp/full/ 保留的是重建出来的完整源码树（1410 个游戏类 +
+    // cocos2d-x 2.2.2 引擎），作为逆向研究材料与可选的整库重编路径存在，
+    // 但默认不参与本次构建：
+    //
+    //     externalNativeBuild {          // ← 整库重编路径，默认关闭
+    //         cmake {
+    //             path file('src/main/cpp/full/CMakeLists.txt')
+    //             version '3.22.1'
+    //         }
+    //     }
+    //
+    // 如需改用整库重编，取消上面注释即可；注意必须先移除 jniLibs 里的
+    // 原版 libcocos2dcpp.so，否则两者会冲突。
+    // ========================================================================
+
+
+    sourceSets {
+        main {
+            // Reconstructed Java sources (game + cocos2d-x Java layer + SDK stubs).
+            java.srcDirs = ['src/main/java']
+            // Original assets, prebuilt third-party .so, and reconstructed jni bridge.
+            assets.srcDirs = ['src/main/assets']
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // AGP 8.0 removed packagingOptions{} in favour of packaging{}.
+    packaging {
+        jniLibs {
+            // libcocos2dcpp.so is rebuilt from src/main/cpp; keep the remaining
+            // third-party prebuilt libraries as-is (not re-compressed).
+            useLegacyPackaging = true
+        }
+    }
+
+    // The decompiled sources still carry a few benign issues (see README);
+    // keep lint from failing the reconstructed build.
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    // The reconstructed sources target the original platform APIs. Most
+    // third-party SDKs are provided as local compile stubs under
+    // src/main/java (see README "SDK stubs").
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+
+}
+
+// Kotlin 1.8 folded the kotlin-stdlib-jdk7/jdk8 classes into kotlin-stdlib, but
+// kotlinx-coroutines 1.6.4 (pulled in transitively by appcompat) still asks for
+// the 1.6.21 shims, which still carry those classes and therefore collide with
+// kotlin-stdlib 1.8.22. From 1.8 on the shims are empty artifacts, so dropping
+// them leaves kotlin-stdlib as the single provider of those classes.
+configurations.configureEach {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+}

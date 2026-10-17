@@ -1,0 +1,10 @@
+{
+    "userAttack": %ld,
+    "userDefense": %ld,
+    "userLife": %ld,
+    "userSpeed": %ld,
+    "masterAttack": %ld,
+    "masterDefense": %ld,
+    "masterLife": %ld,
+    "masterSpeed": %ld,
+}

@@ -1,0 +1,27 @@
+#pragma once
+// BLImmortalsRefineLockPresenter
+// 基类: cocos2d::CCObject
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLImmortalsRefineLockPresenter : public cocos2d::CCObject {
+public:
+    ~BLImmortalsRefineLockPresenter();
+    void onClick(cocos2d::CCObject*, unsigned int);
+    BLImmortalsRefineLockPresenter();
+    undefined4 create();
+    void initWithView(BLImmortalsRefineLockView*);
+    void onEnter();
+    void onExit();
+    void reset();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x1c?28 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[28];
+};

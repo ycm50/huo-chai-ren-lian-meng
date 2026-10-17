@@ -1,0 +1,6 @@
+{
+    "uid": "%s",
+    "opponentUid": "%s",
+    "recordId": "%s",
+    "isWin": "%s" 
+}

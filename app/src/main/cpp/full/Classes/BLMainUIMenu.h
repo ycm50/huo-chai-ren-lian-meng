@@ -1,0 +1,138 @@
+#pragma once
+// BLMainUIMenu
+// 基类: cocos2d::CCLayer
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLMainUIMenu : public cocos2d::CCLayer {
+public:
+    MainMenuData* getMainMenuData() const;
+    void changeFoucsBtn();
+    bool ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void setMainMenuData(MainMenuData*);
+    ~BLMainUIMenu();
+    void updateVipLight(cocos2d::CCObject*);
+    void updatebackCount();
+    void onBluetoothConnected(cocos2d::CCObject*);
+    void onBluetoothDisConnected(cocos2d::CCObject*);
+    void clickMore(cocos2d::CCObject*, unsigned int);
+    void clickAbout(cocos2d::CCObject*, unsigned int);
+    void showYuanZheng();
+    void onGoToActivity();
+    void onOpenPractice();
+    void onOpenGM(cocos2d::CCObject*, unsigned int);
+    void onOpenFreeReward(cocos2d::CCObject*, unsigned int);
+    void onMainDuiHuan();
+    void onFestival(cocos2d::CCObject*, unsigned int);
+    void onGiftManager(cocos2d::CCObject*, unsigned int);
+    void onPack4399(cocos2d::CCObject*, unsigned int);
+    void onQQCoin(cocos2d::CCObject*, unsigned int);
+    void onOneGift(cocos2d::CCObject*, unsigned int);
+    void onUpdatePublish();
+    void doBtnMenuEnd();
+    void onUpdateVirtualItemData(cocos2d::CCObject*);
+    void onGotoRating(cocos2d::CCObject*, unsigned int);
+    void onArenaOnlineHost(cocos2d::CCObject*, unsigned int);
+    void onVip(cocos2d::CCObject*, unsigned int);
+    void quiteGame();
+    void shezhiQuite();
+    void onMonthlyItemsGet();
+    void onMainHideSheZhiTip();
+    void onHideSMHCH();
+    void onLiveness(cocos2d::CCObject*, unsigned int);
+    void onOpenGemDraw();
+    void onGetOnSales();
+    void onShowCardView(cocos2d::CCObject*);
+    void onOpenRedPacket();
+    void onHost(cocos2d::CCObject*, unsigned int);
+    undefined8 onDailyPack(cocos2d::CCObject*, unsigned int);
+    void showSigned();
+    void updateCardView();
+    undefined8 onSure(cocos2d::CCObject*);
+    void onInitSMHCHCallback(cocos2d::CCObject*);
+    void onSMHCHTimeError(cocos2d::CCObject*);
+    void onGiftPackage(cocos2d::CCObject*, unsigned int);
+    BLMainUIMenu();
+    void initGM();
+    void initFreeReward();
+    void buyNevicePackageOK();
+    void onShowRank(cocos2d::CCObject*, unsigned int);
+    void doBtnMenuAniamtion(bool);
+    void addVirtualItem();
+    void initRatingMenu();
+    void initVip();
+    void initOnSaleShop();
+    void onAchievement(cocos2d::CCObject*, unsigned int);
+    void initMonthlyContract();
+    void initPack4399();
+    void initQQcoinEnter();
+    void initOneGift();
+    void initWeekGift();
+    void initSheZhi();
+    undefined8 getSignTip();
+    void initotherGift();
+    void initCard();
+    void setBtnQQCoinVisible(bool);
+    void initDialyPack();
+    void initSMHCH();
+    void initLiveness();
+    void onShowSMHCH(cocos2d::CCObject*, unsigned int);
+    void onWeekGift(cocos2d::CCObject*, unsigned int);
+    void onUpdateCombat(cocos2d::CCObject*);
+    void addItem(std::vector<int, std::allocator<int>> *);
+    void updateHeroJie();
+    void onUpdateSignLight(cocos2d::CCObject*);
+    void updateSignlight();
+    void zhuceJiangli();
+    void onHideOneGift();
+    void onZSGift(cocos2d::CCObject*, unsigned int);
+    undefined4 getUnLock(std::string *);
+    void initFailGift();
+    void initCampaignAndNotice();
+    undefined8 showHuoDong();
+    void onCampaign(cocos2d::CCObject*, unsigned int);
+    void reflashActivityUI(cocos2d::CCObject*);
+    void onHuaWei(cocos2d::CCObject*, unsigned int);
+    void initBluetooth();
+    void initGiftZhuanShu();
+    void huaweishop();
+    void initGemDraw();
+    void initRedPack();
+    void keyBackClicked();
+    void initFestival();
+    void onUpdateMainBtnNum();
+    undefined8 tick(float);
+    void onMonthlyContract(cocos2d::CCObject*, unsigned int);
+    void onMonthlyRefreshUI();
+    void onNotice(cocos2d::CCObject*, unsigned int);
+    undefined8 onGemDraw(cocos2d::CCObject*, unsigned int);
+    void onRedPack(cocos2d::CCObject*, unsigned int);
+    void updateDailyPack();
+    void initSigned();
+    void onSigned(cocos2d::CCObject*, unsigned int);
+    void onUPdateSignedLight();
+    void onSevenDayGift(cocos2d::CCObject*, unsigned int);
+    void onMainSheZhi(cocos2d::CCObject*, unsigned int);
+    void onCard(cocos2d::CCObject*, unsigned int);
+    undefined8 onOpenOnSale(cocos2d::CCObject*, unsigned int);
+    void onUpdateAchievement(cocos2d::CCObject*);
+    void initMainMenus();
+    void onBtnClick(cocos2d::CCObject*, unsigned int);
+    void initGifts(bool);
+    void onBuyGift(cocos2d::CCObject*);
+    void showInitGifts();
+    void initGiftManager();
+    void onUpdateTip(cocos2d::CCObject*);
+    void initDailyGift();
+    void onUpdateLivenessTips(cocos2d::CCObject*);
+    bool init();
+    void onEnter();
+    void onExit();
+};

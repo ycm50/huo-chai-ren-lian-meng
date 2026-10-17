@@ -1,0 +1,16 @@
+#pragma once
+// MineCollectHeroUI
+// 基类: (无)
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class MineCollectHeroUI {
+public:
+    int * create();
+    ~MineCollectHeroUI();
+    void tick(float);
+};

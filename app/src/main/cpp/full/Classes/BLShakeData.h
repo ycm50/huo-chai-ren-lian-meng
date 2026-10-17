@@ -1,0 +1,29 @@
+#pragma once
+// BLShakeData
+// 基类: cocos2d::CCObject
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLShakeData : public cocos2d::CCObject {
+public:
+    ~BLShakeData();
+    void setMove(std::string);
+    void setType(std::string);
+    void setMainKey(std::string);
+    std::string getMove() const;
+    std::string getType() const;
+    std::string getMainKey() const;
+    BLShakeData();
+    bool init();
+    void initWith(char**, int&);
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x20?32 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[32];
+};

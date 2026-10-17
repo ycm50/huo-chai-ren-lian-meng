@@ -1,0 +1,26 @@
+#pragma once
+// BLYuanZhengFailedResultPresenter
+// 基类: cocos2d::CCObject
+#include "bl_types.h"
+#include "cocos2d.h"
+#include "cocos-ext.h"
+#include "BLForwards.h"
+#include "BLDataForwards.h"
+
+
+class BLYuanZhengFailedResultPresenter : public cocos2d::CCObject {
+public:
+    ~BLYuanZhengFailedResultPresenter();
+    void onBtnClick(cocos2d::CCObject*, unsigned int);
+    BLYuanZhengFailedResultPresenter();
+    undefined4 create();
+    void initWithView(BLYuanZhengFailedResultView*);
+    void onEnter();
+    void onExit();
+
+public:
+    /* HW_SIZE_PAD (R94): ?????? 0x18?24 B??
+       ???????????????????????sizeof ??????
+       ?????**????**??? -> ?? -> ?????? >= ??????????????*/
+    unsigned char _hw_pad[24];
+};
